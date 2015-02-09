@@ -8,10 +8,6 @@ function getLocation() {
 
 function initializeMap(position) {
     var myCenter = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-    var marker = new google.maps.Marker({
-        position: myCenter,
-        title: 'Você está aqui'
-    });
 
     var mapProp = {
         center: myCenter,
@@ -19,15 +15,13 @@ function initializeMap(position) {
     };
 
     var map = new google.maps.Map(document.getElementById('mapa'), mapProp);
-    marker.setMap(map);
-
-    google.maps.event.addListener(marker, 'click', function () {
-
-        infowindow.setContent(contentString);
-        infowindow.open(map, marker);
+    
+    var marker = new google.maps.Marker({
+        position: myCenter,
+        title: 'Você está aqui',
+        map : map
     });
-
-}
-;
+    
+};
 
 getLocation();

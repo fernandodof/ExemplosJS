@@ -1,12 +1,27 @@
-#mapa{
-    width: 800px;
-    height: 600px;
+.ex{
+    margin-bottom: 30px;
+    clear: left;
+    float: left;
+    width: 100%;
+    
 }
 
-#loading{
-    display: none;
+#quadrado1{
+    background:#d58512;
+    height:200px;
+    width:200px;
 }
 
-#resultado{
-    display: none;
+
+#quadrado2{
+    background: #53be53;
+    width: 167px;
+    height: 143px;
+}
+
+#quadrado3{
+    background:#20829f;
+    height:100px;
+    width:100px;
+    position: absolute;
 }

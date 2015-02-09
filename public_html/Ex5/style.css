@@ -1,0 +1,12 @@
+#mapa{
+    width: 800px;
+    height: 600px;
+}
+
+#loading{
+    display: none;
+}
+
+#resultado{
+    display: none;
+}
