@@ -46,7 +46,7 @@ function initializeMap(position) {
         map.panTo(myCenter);
     }
 
-    document.getElementById('info').innerHTML += "<p>" + position.coords.latitude + "," + position.coords.longitude + ' ' + position.coords.accuracy + "</p>";
+    document.getElementById('info').innerHTML += "<p>" + position.coords.latitude + "," + position.coords.longitude + "</p>";
 
 }
 

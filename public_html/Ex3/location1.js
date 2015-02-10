@@ -11,7 +11,7 @@ function initializeMap(position) {
 
     var mapProp = {
         center: myCenter,
-        zoom: 16
+        zoom: 20
     };
 
     var map = new google.maps.Map(document.getElementById('mapa'), mapProp);
@@ -21,6 +21,7 @@ function initializeMap(position) {
         title: 'Você está aqui',
         map : map
     });
+    console.log(position.coords.accuracy);
     
 };
 
