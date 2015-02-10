@@ -21,7 +21,7 @@ function initializeMap(position) {
     }
 
     var image = new google.maps.MarkerImage(
-            'http://plebeosaur.us/etc/map/bluedot_retina.png',
+            'bluedot_retina.png',
             null, // size
             null, // origin
             new google.maps.Point(8, 8), // anchor (move to center of marker)
@@ -46,7 +46,7 @@ function initializeMap(position) {
         map.panTo(myCenter);
     }
 
-    document.getElementById('info').innerHTML += "<p>" + position.coords.latitude + "," + position.coords.longitude + "</p>";
+    document.getElementById('info').innerHTML += "<p>" + position.coords.latitude + "," + position.coords.longitude + ' ' + position.coords.accuracy + "</p>";
 
 }
 
