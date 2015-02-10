@@ -10,3 +10,12 @@
 #resultado{
     display: none;
 }
+
+#destaque{
+    padding-bottom: 100px;
+}
+
+#imgs img{
+    width: 250px;
+    height: 350px;
+}

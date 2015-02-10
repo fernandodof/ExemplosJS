@@ -36,16 +36,22 @@ and open the template in the editor.
     </nav>
 
     <div class="container">
-        <h1>BUSCAR FILME/SÉRIE</h1>
-        <form id="filme-form" class="col-md-6 col-md-offset-3" action="javascipt:void(0)">
-            <div class="form-group">
-                <input type="text" class="form-control" id="nome-filme" autocomplete="off">
+        
+        <div class="row">
+            <div id="destaque">
+                <h1>BUSCAR FILME/SÉRIE</h1>
+
+                <form id="filme-form" class="col-md-6 col-md-offset-3" action="javascipt:void(0)">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nome-filme" autocomplete="off">
+                    </div>
+
+                    <input type="submit" class="btn btn-success pull-right" value="Buscar" onclick="buscarFilme();">        
+                </form>
             </div>
+            <img id="loading" src="../img/squares.gif" alt="Carregando....">
+        </div>
 
-            <input type="submit" class="btn btn-success pull-right" value="Buscar" onclick="buscarFilme()">        
-        </form>
-
-        <img id="loading" src="../img/squares.gif" alt="Carregando....">
 
         <div id="resultado" class="col-md-6 col-md-offset-3">
             <img id="filme-imagem" src="" alt="poster">
@@ -53,7 +59,7 @@ and open the template in the editor.
             <p id="filme-ano"></p>
             <p id="filme-duracao"></p>
             <p id="filme-descricao"></p>
-        </div>
+        </div> 
     </div>
 
 </body>
